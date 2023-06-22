@@ -21,7 +21,7 @@ const RightLayout = () => {
     return (
         <>
             <div className="animate__animated  animate__fadeInRight animate__delay-1s">
-                <Draggable>
+                <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
                         <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 md:skew-y-[10deg] h-full lg:h-[25.5rem] overflow-auto relative">
                             <div className="">
