@@ -1,0 +1,76 @@
+import React from 'react';
+
+import PortfolioCard from '../PortfolioCard';
+
+import azzahra from '../../assets/work/azzahra.png';
+import kasihgold from '../../assets/work/kasihgold.png';
+import csccovid from '../../assets/work/csccovid.png';
+import efms from '../../assets/work/efms.png';
+import emandate from '../../assets/work/emandate.png';
+import arrahnu from '../../assets/work/arrahnu.png';
+import csctestkit from '../../assets/work/csctestkit.png';
+import crems from '../../assets/work/crems.png';
+import cces from '../../assets/work/cces.png';
+
+const Work = () => {
+    return (
+        <>
+            <PortfolioCard
+                href="https://www.myazzahra.com/portal/"
+                src={azzahra}
+                title="Azzahra portal"
+                subTitle="Laravel & Bootstrap"
+            />
+            <PortfolioCard
+                href="https://cscabs.net.my/kasihgold"
+                src={kasihgold}
+                title="Kasih Gold"
+                subTitle="Tall Stack"
+            />
+            <PortfolioCard
+                href="https://cscabs.net.my/covid/"
+                src={csccovid}
+                title="Covid Report"
+                subTitle="Laravel & Tailwindcss"
+            />
+            <PortfolioCard
+                href="https://www.koputraonline.com.my/fms/"
+                src={efms}
+                title="FMS"
+                subTitle="Tall Stack"
+            />
+            <PortfolioCard
+                href="https://fmsonline.tekun.gov.my/emandateV2"
+                src={emandate}
+                title="Emandate"
+                subTitle="Tall Stack"
+            />
+            <PortfolioCard
+                href="https://www.koputraonline.com.my/arrahnu/login"
+                src={arrahnu}
+                title="Arrahnu"
+                subTitle="Tall Stack"
+            />
+            {/* <PortfolioCard
+                href="https://cces.cscabs.net.my/"
+                src={cces}
+                title="Cces"
+                subTitle="Tall Stack"
+            /> */}
+            <PortfolioCard
+                href="#"
+                src={csctestkit}
+                title="Cces"
+                subTitle="Expo React Native"
+            />
+            <PortfolioCard
+                href="#"
+                src={crems}
+                title="CREMs"
+                subTitle="Expo React Native"
+            />
+        </>
+    )
+}
+
+export default Work;
