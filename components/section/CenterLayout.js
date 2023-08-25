@@ -31,11 +31,11 @@ const CenterLayout = () => {
 
     return (
         <>
-            <div className="animate__animated  animate__fadeInDownBig">
-                <div className=" card-bg-color shdaow-xl p-4 mb-4 text-white">
+            <div className="animate__animated animate__fadeInDownBig">
+                <div className="p-4 mb-4 text-white card-bg-color shdaow-xl">
                     <div className="flex items-start space-x-4">
                         <Image 
-                            className="w-28 h-28 rounded-full border border-white/20  backdrop-blur-md brightness-125 backdrop-invert backdrop-contrast-125"
+                            className="w-24 h-24 border-4 rounded-full border-white/20 backdrop-blur-md brightness-125 backdrop-invert backdrop-contrast-125 border-lime-500"
                             src={Me} 
                             placeholder="blur" 
                             quality={1} 
@@ -45,13 +45,13 @@ const CenterLayout = () => {
                             priority 
                         />
                         <div className="space-y-0.5">
-                            <h1 className="font-semibold text-xl myfont">SAFWAN</h1>
+                            <h1 className="text-xl font-semibold myfont">SAFWAN</h1>
                             <h1 className="font-semibold text-lime-500 myfont">FRONTEND DEVELOPER</h1>
-                            <div className="text-xs pt-1 flex items-center space-x-1">
+                            <div className="flex items-center pt-1 space-x-1 text-xs">
                                 <FontAwesomeIcon icon={faLocationDot} className="w-3 h-3" />
                                 <p>Kajang,Selangor,Malaysia</p>
                             </div>
-                            <div className="text-xs flex items-center space-x-1 pt-1">
+                            <div className="flex items-center pt-1 space-x-1 text-xs">
                                 <FontAwesomeIcon icon={faEnvelope} className="w-3 h-3" />
                                 <p>safwanazman017@gmail.com</p>
                             </div>
@@ -61,10 +61,10 @@ const CenterLayout = () => {
             </div>
 
             {/* About */}
-            <div className="animate__animated  animate__fadeInUpBig ">
-                <div className=" card-bg-color shdaow-xl p-4 text-white bg-center bg-cover">
+            <div className="animate__animated animate__fadeInUpBig ">
+                <div className="p-4 text-white bg-center bg-cover card-bg-color shdaow-xl">
                     <div className="px-4">
-                        <div className="flex justify-between space-x-2 items-center">
+                        <div className="flex items-center justify-between space-x-2">
                             <h1 className="font-semibold text-lime-500 myfont">ABOUT <span className='text-white'>ME</span></h1>
                             <MainAudio 
                                 isPlayingProp={isPlaying} 
@@ -74,7 +74,7 @@ const CenterLayout = () => {
                                 handleAudioEnd={handlePause}
                             />
                         </div>
-                        <p className="text-sm leading-6 pt-2 h-full lg:h-64">
+                        <p className="h-full pt-2 text-sm leading-6 lg:h-64">
                             I am a highly skilled Frontend Developer with a passion for creating visually stunning and intuitive
                             user interfaces.
                             I have a strong background in HTML, CSS, and JavaScript, as well as experience with popular frontend
@@ -94,28 +94,28 @@ const CenterLayout = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-6 mt-6">
-                <div className="animate__animated  animate__fadeInBottomLeft animate__delay-2s">
-                    <div className="card-bg-color shdaow-xl rounded-lg p-4 ">
+                <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
+                    <div className="p-4 rounded-lg card-bg-color shdaow-xl ">
                         <div className="flex">
-                            <div className="border rounded-full p-4">
+                            <div className="p-4 border rounded-full">
                                 <FontAwesomeIcon icon={faLaptopCode} color="#84cc16" className="w-8 h-8" />
                             </div>
                         </div>
-                        <h1 className="text-sm  text-white pt-2 pl-2">Year of Experience</h1>
-                        <h1 className="text-center p-2 text-lime-400 rounded-full mt-5 text-xl lg:text-2xl bg-gray-800/10 backdrop-blur-xl myfont">
+                        <h1 className="pt-2 pl-2 text-sm text-white">Year of Experience</h1>
+                        <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2xl bg-gray-800/10 backdrop-blur-xl myfont">
                             {yearWork}
                         </h1>
                     </div>
                 </div>
-                <div className="animate__animated  animate__fadeInBottomRight animate__delay-2s">
-                    <div className="card-bg-color shdaow-xl rounded-lg p-4 ">
+                <div className="animate__animated animate__fadeInBottomRight animate__delay-2s">
+                    <div className="p-4 rounded-lg card-bg-color shdaow-xl ">
                         <div className="flex">
-                            <div className=" border rounded-full p-4">
+                            <div className="p-4 border rounded-full ">
                                 <FontAwesomeIcon icon={faClock} color="#84cc16" className="w-8 h-8" />
                             </div>
                         </div>
-                        <h1 className="text-sm  text-white pt-2 pl-2">Hour of Work</h1>
-                        <h1 className="text-center p-2 text-lime-400 rounded-full mt-5 text-xl lg:text-2x  backdrop-blur-xl myfont">
+                        <h1 className="pt-2 pl-2 text-sm text-white">Hour of Work</h1>
+                        <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2x backdrop-blur-xl myfont">
                             {hourWork}
                         </h1>
                     </div>
