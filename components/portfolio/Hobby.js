@@ -12,6 +12,12 @@ const Hobby = () => {
     return (
         <>
             <PortfolioCard
+                href="https://jomskate.vercel.app/"
+                src={jomskate}
+                title="Jom Skate (My Product)"
+                subTitle="Next Js with prisma & Tailwindcss"
+            />
+            <PortfolioCard
                 href="https://www.frontendmentor.io/profile/safwanAzman"
                 src={frontendMentor}
                 title="My Challenge Solutions"
@@ -28,12 +34,6 @@ const Hobby = () => {
                 src={todo}
                 title="Todo List"
                 subTitle="React & Tailwindcss"
-            />
-            <PortfolioCard
-                href="https://jom-skate-lp-safwanazman.vercel.app/"
-                src={jomskate}
-                title="Jom Skate"
-                subTitle="Expo React Native"
             />
             <PortfolioCard
                 href="https://digital-card-pearl.vercel.app/"
