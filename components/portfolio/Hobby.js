@@ -14,7 +14,7 @@ const Hobby = () => {
             <PortfolioCard
                 href="https://jomskate.vercel.app/"
                 src={jomskate}
-                title="Jom Skate (My Product)"
+                title="Jom Skate"
                 subTitle="Next Js with prisma & Tailwindcss"
             />
             <PortfolioCard
