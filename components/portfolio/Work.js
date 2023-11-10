@@ -16,12 +16,6 @@ const Work = () => {
     return (
         <>
             <PortfolioCard
-                href="https://www.myazzahra.com/portal/"
-                src={azzahra}
-                title="Azzahra portal"
-                subTitle="Laravel & Bootstrap"
-            />
-            <PortfolioCard
                 href="https://cscabs.net.my/kasihgold"
                 src={kasihgold}
                 title="Kasih Gold"
@@ -51,23 +45,11 @@ const Work = () => {
                 title="Arrahnu"
                 subTitle="Tall Stack"
             />
-            {/* <PortfolioCard
+            <PortfolioCard
                 href="https://cces.cscabs.net.my/"
                 src={cces}
                 title="Cces"
                 subTitle="Tall Stack"
-            /> */}
-            <PortfolioCard
-                href="#"
-                src={csctestkit}
-                title="Cces"
-                subTitle="Expo React Native"
-            />
-            <PortfolioCard
-                href="#"
-                src={crems}
-                title="CREMs"
-                subTitle="Expo React Native"
             />
         </>
     )

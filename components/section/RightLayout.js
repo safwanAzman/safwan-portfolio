@@ -1,7 +1,7 @@
 import React, { useEffect, useRef,useState } from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import { faGithub,faTwitter,faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub,faLinkedin,faXTwitter} from "@fortawesome/free-brands-svg-icons";
 import Draggable from 'react-draggable';
 
 import Hobby from '../portfolio/Hobby';
@@ -76,22 +76,22 @@ const RightLayout = () => {
                         <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 md:skew-y-[10deg] h-[17rem] ">
                             <h1 className="text-center text-sm text-white pb-3 myfont">CONCTACT ME</h1>
                             <div className=" grid grid-cols-2 gap-4">
-                                <a href="https://github.com/safwanAzman" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <a href="https://github.com/safwanAzman" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 lg:hover:scale-110">
                                     <div className=" border rounded-full p-4">
                                         <FontAwesomeIcon icon={faGithub} color="#84cc16" className="w-8 h-8" />
                                     </div>
                                 </a>
-                                <a href="https://twitter.com/sfwn_azmn" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <a href="https://twitter.com/sfwn_azmn" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 lg:hover:scale-110">
                                     <div className=" border rounded-full p-4">
-                                        <FontAwesomeIcon icon={faTwitter} color="#84cc16" className="w-8 h-8" />
+                                        <FontAwesomeIcon icon={faXTwitter} color="#84cc16" className="w-8 h-8" />
                                     </div>
                                 </a>
-                                <a href="https://www.instagram.com/safwn_/" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <a href="https://www.linkedin.com/in/safwan-azman-149aa7217/" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 lg:hover:scale-110">
                                     <div className=" border rounded-full p-4">
-                                        <FontAwesomeIcon icon={faInstagram} color="#84cc16" className="w-8 h-8" />
+                                        <FontAwesomeIcon icon={faLinkedin} color="#84cc16" className="w-8 h-8" />
                                     </div>
                                 </a>
-                                <a href="mailto:safwanazman017@gmail.com?subject" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <a href="mailto:safwanazman017@gmail.com?subject" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 lg:hover:scale-110">
                                     <div className=" border rounded-full p-4">
                                         <FontAwesomeIcon icon={faEnvelope} color="#84cc16" className="w-8 h-8" />
                                     </div>
