@@ -87,7 +87,7 @@ const LeftLayout = () => {
             <div className="animate__animated  animate__fadeInLeft animate__delay-1s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
-                        <div className="relative card-bg-color shdaow-xl rounded-lg p-4 -skew-y-0 md:-skew-y-[10deg] h-full md:h-[25.5rem] ">
+                        <div className="relative card-bg-color shdaow-xl rounded-lg p-4 -skew-y-0 lg:-skew-y-[10deg] h-full md:h-[25.5rem] ">
                             <h1 className="text-center text-sm text-white myfont">TECHNICAL SKILLS</h1>
                             <div className="bg-gray-100/10 overflow-y-hidden rounded-lg mt-3">
                                 <div className="box mt-12 lg:mt-10 ">
@@ -154,7 +154,7 @@ const LeftLayout = () => {
             <div className="animate__animated  animate__fadeInLeft animate__delay-2s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
-                        <div className="relative card-bg-color shdaow-xl rounded-lg  -skew-y-0 md:-skew-y-[10deg] h-32 bg-cover bg-center "
+                        <div className="relative card-bg-color shdaow-xl rounded-lg  -skew-y-0 lg:-skew-y-[10deg] h-32 bg-cover bg-center "
                             style={{ backgroundImage: `url('https://i.pinimg.com/564x/f9/92/23/f99223ae375940ae486425de30f65f59.jpg')` }}>
                             <div
                                 className="absolute inset-0 bg-gray-600/70 rounded-xl flex items-center justify-center flex-col text-white text-sm space-y-1">
@@ -167,7 +167,7 @@ const LeftLayout = () => {
             </div>
 
             <div className="animate__animated  animate__fadeInLeft animate__delay-2s">
-                <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 -skew-y-0 md:-skew-y-[10deg] gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 -skew-y-0 lg:-skew-y-[10deg] gap-6">
                     <Draggable disabled={isTouchDevice}>
                         <div className="cursor-grab">
                             <div className="card-bg-color shdaow-xl rounded-lg p-4  h-32  bg-cover bg-center flex items-ceter justify-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"

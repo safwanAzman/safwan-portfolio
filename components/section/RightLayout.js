@@ -23,7 +23,7 @@ const RightLayout = () => {
             <div className="animate__animated  animate__fadeInRight animate__delay-1s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
-                        <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 md:skew-y-[10deg] h-full lg:h-[25.5rem] overflow-auto relative">
+                        <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 lg:skew-y-[10deg] h-full lg:h-[25.5rem] overflow-auto relative">
                             <div className="">
                                 <h1 className="text-center text-sm text-white mb-4 myfont">MY PORTFOLIO</h1>
                                 <div className="flex items-center space-x-2 justify-center">
@@ -73,7 +73,7 @@ const RightLayout = () => {
             <div className="animate__animated  animate__fadeInRight animate__delay-2s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
-                        <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 md:skew-y-[10deg] h-[17rem] ">
+                        <div className="card-bg-color shdaow-xl rounded-lg p-4 skew-y-0 lg:skew-y-[10deg] h-[17rem] ">
                             <h1 className="text-center text-sm text-white pb-3 myfont">CONCTACT ME</h1>
                             <div className=" grid grid-cols-2 gap-4">
                                 <a href="https://github.com/safwanAzman" target="_blank" className="card-bg-color shdaow-xl rounded-lg p-4 h-24 flex justify-center items-center transition ease-in-out delay-150 hover:-translate-y-1 lg:hover:scale-110">

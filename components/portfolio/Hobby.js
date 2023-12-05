@@ -6,6 +6,7 @@ import digitalcard from '../../assets/work/digitalcard.png';
 import mycomponent from '../../assets/work/mycomponent.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
+import boikotisrael from '../../assets/work/boikotIsrael.png';
 
 
 const Hobby = () => {
@@ -16,6 +17,12 @@ const Hobby = () => {
                 src={jomskate}
                 title="Jom Skate"
                 subTitle="Next Js with prisma & Tailwindcss"
+            />
+            <PortfolioCard
+                href="https://boycott-israel-safwanazman.vercel.app/en"
+                src={boikotisrael}
+                title="Boikot Israel"
+                subTitle="Next Js & Tailwindcss"
             />
             <PortfolioCard
                 href="https://www.frontendmentor.io/profile/safwanAzman"
