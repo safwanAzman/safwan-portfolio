@@ -16,7 +16,7 @@ const Hobby = () => {
                 href="https://jomskate.vercel.app/"
                 src={jomskate}
                 title="Jom Skate"
-                subTitle="Next Js with prisma & Tailwindcss"
+                subTitle="Next Js & Tailwindcss"
             />
             <PortfolioCard
                 href="https://boycott-israel-safwanazman.vercel.app/en"
