@@ -35,7 +35,7 @@ const CenterLayout = () => {
                 <div className="p-4 mb-4 text-white card-bg-color shdaow-xl">
                     <div className="flex items-start space-x-4">
                         <Image 
-                            className="w-24 h-24 border-4 rounded-full border-white/20 backdrop-blur-md brightness-125 backdrop-invert backdrop-contrast-125 border-lime-500"
+                            className="w-24 h-24 border-2 rounded-full  backdrop-blur-md brightness-125 backdrop-invert backdrop-contrast-125 border-white/50"
                             src={Me} 
                             placeholder="blur" 
                             quality={1} 
