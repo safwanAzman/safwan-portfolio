@@ -83,8 +83,7 @@ const CenterLayout = () => {
                             layouts and
                             cross-browser compatible web pages. I am skilled in utilizing design software such as Figma to
                             create mockups and wireframes.
-                            I am also proficient in using CSS preprocessors and CSS frameworks such as Tailwindcss and
-                            Bootstrap. I am a quick learner and
+                            I am also proficient in using CSS preprocessors and CSS frameworks such as Tailwindcss. I am a quick learner and
                             am always eager to stay up-to-date with the latest frontend
                             technologies and best practices. I am a team player and am able to work well under pressure,
                             I am confident that I can bring value to any organization.
