@@ -19,9 +19,9 @@ export default function Home() {
       </Head>
       
 
-      <div className="bg-black bg-cover bg-center relative" style={{ backgroundImage: `url(${Bg.src})` }}>
-        <div className="lg:bg-black/70 h-full md:h-screen bg-black/80">
-          <div className="grid grid-cols-12 gap-6  container mx-auto pt-[3%] px-4 lg:px-0">
+      <div className="bg-black bg-cover bg-center relative  overflow-hidden" style={{ backgroundImage: `url(${Bg.src})` }}>
+        <div className="lg:bg-black/70 h-full md:h-screen bg-black/80 ">
+          <div className="grid grid-cols-12 gap-6 container mx-auto pt-[3%] px-4 lg:px-0">
             {/* left layout */}
             <div className="col-span-12 lg:col-span-3 py-4 space-y-6 z-50 ">
                 <LeftLayout/>
