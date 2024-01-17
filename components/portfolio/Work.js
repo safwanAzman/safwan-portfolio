@@ -16,7 +16,7 @@ const Work = () => {
     return (
         <>
             <PortfolioCard
-                href="https://cscabs.net.my/kasihgold"
+                href="https://cscabs.net.my/kasihgold/login"
                 src={kasihgold}
                 title="Kasih Gold"
                 subTitle="Tall Stack"
@@ -34,19 +34,13 @@ const Work = () => {
                 subTitle="Tall Stack"
             />
             <PortfolioCard
-                href="https://fmsonline.tekun.gov.my/emandateV2"
-                src={emandate}
-                title="Emandate"
-                subTitle="Tall Stack"
-            />
-            <PortfolioCard
                 href="https://www.koputraonline.com.my/arrahnu/login"
                 src={arrahnu}
                 title="Arrahnu"
                 subTitle="Tall Stack"
             />
             <PortfolioCard
-                href="https://cces.cscabs.net.my/"
+                href="https://crems.cscabs.net.my/login"
                 src={cces}
                 title="Cces"
                 subTitle="Tall Stack"
