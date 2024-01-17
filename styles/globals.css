@@ -80,6 +80,10 @@
   --i:6
 }
 
+.box7{
+  --i:7
+}
+
 .box span {
   position: absolute;
   top: 0;
@@ -91,7 +95,6 @@
   transform: rotateY(calc(var(--i)*45deg)) translateZ(200px);
   -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004 );
 }
-
 
 .box span img{
   position : absolute;

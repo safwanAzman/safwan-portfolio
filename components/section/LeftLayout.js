@@ -7,6 +7,8 @@ import Laravel from '../../assets/skills/laravel.png';
 import Reactjs from '../../assets/skills/react.png';
 import Livewire from '../../assets/skills/livewire.png';
 import Alpine from '../../assets/skills/alpinejs.svg';
+import Typescripts from '../../assets/skills/typescript.svg';
+import NextJs from '../../assets/skills/nextjs.webp';
 import Love from '../../assets/love.png';
 import GitHubCalendar from 'react-github-calendar';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -91,11 +93,11 @@ const LeftLayout = () => {
                             <h1 className="text-center text-sm text-white myfont">TECHNICAL SKILLS</h1>
                             <div className="bg-gray-100/10 overflow-y-hidden rounded-lg mt-3">
                                 <div className="box mt-12 lg:mt-10 ">
-                                    <span className="box1">
+                                    <span className="box1 ske">
                                         <Image src={Tailwind} className="" alt="Tailwindcss" priority />
                                     </span>
                                     <span className="box2">
-                                        <Image src={Bootstrap} className="" alt="Bootstrap" priority />
+                                        <Image src={Typescripts} className="rounded-lg" alt="Typescripts" priority />
                                     </span>
                                     <span className="box3">
                                         <Image src={Laravel} className="" alt="Laravel" priority />
@@ -109,18 +111,33 @@ const LeftLayout = () => {
                                     <span className="box6">
                                         <Image src={Reactjs} className="" alt="React" priority />
                                     </span>
+                                    <span className="box7">
+                                        <Image src={NextJs} className="w-auto h-64" alt="NextJs" priority />
+                                    </span>
                                 </div>
                             </div>
 
                             <div className="pt-3">
                                 <p className="text-xs font-semibold text-white">Front-end</p>
                                 <div className="w-full bg-white/20 shadow  rounded-lg">
-                                    <div className="py-0.5 text-xs leading-none text-center text-white bg-lime-400 rounded-lg mt-1"
+                                    <div className="py-0.5 text-xs leading-none text-center text-white  rounded-lg mt-1
+                                        animate-background 
+                                        bg-lime-600 from-lime-600 via-lime-400 to-lime-400 
+                                        bg-[length:_400%_400%] 
+                                        p-[1px]
+                                        [animation-duration:_3s] 
+                                        bg-gradient-to-r"
                                         style={{ width: '70%' }}>70%</div>
                                 </div>
                                 <p className="pt-2 text-xs font-semibold text-white ">Back-end</p>
                                 <div className="w-full bg-white/20 shadow  rounded-lg mt-1">
-                                    <div className="py-0.5 text-xs leading-none text-center text-white bg-lime-400 rounded-lg"
+                                    <div className="py-0.5 text-xs leading-none text-center text-white  rounded-lg
+                                        animate-background 
+                                        bg-lime-600 from-lime-600 via-lime-400 to-lime-400 
+                                        bg-[length:_400%_400%] 
+                                        p-[1px]
+                                        [animation-duration:_3s] 
+                                        bg-gradient-to-r"
                                         style={{ width: '30%' }}>30%</div>
                                 </div>
 
@@ -170,7 +187,7 @@ const LeftLayout = () => {
                 <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 -skew-y-0 lg:-skew-y-[10deg] gap-6">
                     <Draggable disabled={isTouchDevice}>
                         <div className="cursor-grab">
-                            <div className="card-bg-color shdaow-xl rounded-lg p-4  h-32  bg-cover bg-center flex items-ceter justify-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
+                            <div className="card-bg-color shdaow-xl rounded-lg p-4  h-32  bg-cover bg-center flex items-ceter justify-center  transition-all ease-in-out duration-700 hover:-translate-y-1 hover:scale-105"
                                 style={{ backgroundImage: `url('https://i.ytimg.com/vi/14IrKkW1SNo/mqdefault.jpg')` }}>
                                 <Audio 
                                     isPlayingProp={isPlaying} 

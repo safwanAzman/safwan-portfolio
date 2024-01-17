@@ -10,7 +10,7 @@ export const MainAudio = ({ isPlayingProp,audioRef,handlePause,handlePlay ,handl
             <audio ref={audioRef} src={mainAudio} autoPlay onEnded={handleAudioEnd}/>
             {isPlayingProp ? (
                 <button onClick={handlePause} className=" flex items-center justify-center bg-black/50 rounded-full p-2
-                transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                transition-all ease-in-out duration-700 hover:-translate-y-1 hover:scale-105">
                     <LottieMusicAnimated />
                 </button>
             ) : (

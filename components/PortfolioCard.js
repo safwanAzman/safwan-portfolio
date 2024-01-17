@@ -6,7 +6,7 @@ const PortfolioCard = ({href,src,title,subTitle}) => {
         <>
             <a href={href} target="_blank"
                 className="border-gray-400/50 flex items-center space-x-2 border p-2 rounded-lg text-xs hover:bg-black/20 
-                transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 lg:hover:scale-110">
+                 duration-700 hover:-translate-y-1 hover:scale-100 lg:hover:scale-105 transition-all">
                 <Image src={src} alt="project"
                     className="w-12 h-12 rounded border border-white/20  backdrop-blur-md" width={60} height={60}
                     priority={true} />
