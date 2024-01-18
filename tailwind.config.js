@@ -9,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          "2xl": "1300px",
+        },
+      },
       keyframes: {
         'background': {
           '0%, 100%': { backgroundPosition: '0% 50%' },

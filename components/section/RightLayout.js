@@ -19,7 +19,7 @@ const RightLayout = () => {
     }, []);
 
     return (
-        <>
+        <div className="-mt-2 space-y-5">
             <div className="animate__animated  animate__fadeInRight animate__delay-1s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
@@ -101,7 +101,7 @@ const RightLayout = () => {
                     </div>
                 </Draggable>
             </div>
-        </>
+        </div>
     );
 };
 

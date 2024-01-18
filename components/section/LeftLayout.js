@@ -85,7 +85,7 @@ const LeftLayout = () => {
     
 
     return (
-        <>
+        <div className="-mt-2 space-y-5">
             <div className="animate__animated  animate__fadeInLeft animate__delay-1s">
                 <Draggable disabled={isTouchDevice}>
                     <div className="cursor-grab">
@@ -223,7 +223,7 @@ const LeftLayout = () => {
                     </Draggable>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
