@@ -5,7 +5,6 @@ import Bg from '../assets/bg.png';
 import LeftLayout from '../components/section/LeftLayout';
 import CenterLayout from '../components/section/CenterLayout';
 import RightLayout from '../components/section/RightLayout';
-import Spline from '@splinetool/react-spline';
 
 
 const inter = Inter({ subsets: ['latin'] })
