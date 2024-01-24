@@ -7,6 +7,7 @@ import { MainAudio } from '../MainAudio';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLaptopCode ,faClock,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
+import Spline from '@splinetool/react-spline';
 
 const CenterLayout = () => {
     const audioRef = useRef();
@@ -38,7 +39,7 @@ const CenterLayout = () => {
         <div className="sm:-mt-3">
             <div className="animate__animated animate__fadeInDownBig">
                 <Draggable disabled={isTouchDevice}>
-                    <div className="p-4 mb-4 text-white card-bg-color shdaow-xl cursor-grab">
+                    <div className="p-4  text-white card-bg-color shdaow-xl cursor-grab">
                         <div className="flex items-start space-x-4">
                             <Image 
                                 className="w-24 h-24 border-2 rounded-full  backdrop-blur-md brightness-125 backdrop-invert backdrop-contrast-125 border-white/50"
@@ -67,8 +68,12 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
+            <div className="h-80 relative">
+                <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
+            </div>
+
             {/* About */}
-            <div className="animate__animated animate__fadeInUpBig ">
+            <div className="animate__animated animate__fadeInUpBig -mt-9">
                 <Draggable disabled={isTouchDevice}>
                     <div className="p-4 text-white bg-center bg-cover card-bg-color shdaow-xl cursor-grab">
                         <div className="px-4">
@@ -100,7 +105,7 @@ const CenterLayout = () => {
                     </div>
                 </Draggable>
             </div>
-
+{/* 
             <div className="grid grid-cols-2 gap-6 mt-6">
                 <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
                     <Draggable disabled={isTouchDevice}>
@@ -132,7 +137,7 @@ const CenterLayout = () => {
                         </div>
                     </Draggable>
                 </div>
-            </div>
+            </div> */}
         </div>
         );
     };
