@@ -68,12 +68,12 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
-            <div className="h-80 relative">
+            <div className="h-80 relative hidden sm:block">
                 <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
             </div>
 
             {/* About */}
-            <div className="animate__animated animate__fadeInUpBig -mt-9">
+            <div className="animate__animated animate__fadeInUpBig mt-4 sm:-mt-9">
                 <Draggable disabled={isTouchDevice}>
                     <div className="p-4 text-white bg-center bg-cover card-bg-color shdaow-xl cursor-grab">
                         <div className="px-4">
@@ -105,39 +105,41 @@ const CenterLayout = () => {
                     </div>
                 </Draggable>
             </div>
-{/* 
-            <div className="grid grid-cols-2 gap-6 mt-6">
-                <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
-                    <Draggable disabled={isTouchDevice}>
-                        <div className="p-4 rounded-lg card-bg-color shdaow-xl cursor-grab">
-                            <div className="flex">
-                                <div className="p-4 border rounded-full">
-                                    <FontAwesomeIcon icon={faLaptopCode} color="#84cc16" className="w-8 h-8" />
+
+            <div className="block sm:hidden">
+                <div className="grid grid-cols-2 gap-6 mt-6 ">
+                    <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
+                        <Draggable disabled={isTouchDevice}>
+                            <div className="p-4 rounded-lg card-bg-color shdaow-xl cursor-grab">
+                                <div className="flex">
+                                    <div className="p-4 border rounded-full">
+                                        <FontAwesomeIcon icon={faLaptopCode} color="#84cc16" className="w-8 h-8" />
+                                    </div>
                                 </div>
+                                <h1 className="pt-2 pl-2 text-sm text-white">Year of Experience</h1>
+                                <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2xl bg-gray-800/10 backdrop-blur-xl myfont">
+                                    {yearWork}
+                                </h1>
                             </div>
-                            <h1 className="pt-2 pl-2 text-sm text-white">Year of Experience</h1>
-                            <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2xl bg-gray-800/10 backdrop-blur-xl myfont">
-                                {yearWork}
-                            </h1>
-                        </div>
-                    </Draggable>
-                </div>
-                <div className="animate__animated animate__fadeInBottomRight animate__delay-2s">
-                    <Draggable disabled={isTouchDevice}>
-                        <div className="p-4 rounded-lg card-bg-color shdaow-xl cursor-grab ">
-                            <div className="flex">
-                                <div className="p-4 border rounded-full ">
-                                    <FontAwesomeIcon icon={faClock} color="#84cc16" className="w-8 h-8" />
+                        </Draggable>
+                    </div>
+                    <div className="animate__animated animate__fadeInBottomRight animate__delay-2s">
+                        <Draggable disabled={isTouchDevice}>
+                            <div className="p-4 rounded-lg card-bg-color shdaow-xl cursor-grab ">
+                                <div className="flex">
+                                    <div className="p-4 border rounded-full ">
+                                        <FontAwesomeIcon icon={faClock} color="#84cc16" className="w-8 h-8" />
+                                    </div>
                                 </div>
+                                <h1 className="pt-2 pl-2 text-sm text-white">Hour of Work</h1>
+                                <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2x backdrop-blur-xl myfont">
+                                    {hourWork}
+                                </h1>
                             </div>
-                            <h1 className="pt-2 pl-2 text-sm text-white">Hour of Work</h1>
-                            <h1 className="p-2 mt-5 text-xl text-center rounded-full text-lime-400 lg:text-2x backdrop-blur-xl myfont">
-                                {hourWork}
-                            </h1>
-                        </div>
-                    </Draggable>
+                        </Draggable>
+                    </div>
                 </div>
-            </div> */}
+            </div>
         </div>
         );
     };
