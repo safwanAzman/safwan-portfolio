@@ -7,7 +7,7 @@ import { MainAudio } from '../MainAudio';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLaptopCode ,faClock,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import Spline from '@splinetool/react-spline';
 
 const CenterLayout = () => {
     const audioRef = useRef();
@@ -68,11 +68,9 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
-            {/* <div className="h-80 relative hidden sm:block">
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
-                </Suspense>
-            </div> */}
+            <div className="h-80 relative hidden sm:block">
+                <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
+            </div>
 
             {/* About */}
             <div className="animate__animated animate__fadeInUpBig mt-4 sm:-mt-9">
