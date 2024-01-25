@@ -68,11 +68,11 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
-            <div className="h-80 relative hidden sm:block">
+            {/* <div className="h-80 relative hidden sm:block">
                 <Suspense fallback={<div>Loading...</div>}>
                     <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
                 </Suspense>
-            </div>
+            </div> */}
 
             {/* About */}
             <div className="animate__animated animate__fadeInUpBig mt-4 sm:-mt-9">
