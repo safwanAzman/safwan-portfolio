@@ -102,9 +102,9 @@ const CenterLayout = () => {
                             <p className="h-full pt-2 text-sm leading-6">
                                 My name is Safwan, and I have {yearWork} years of experience as a front-end developer.
                                 I know how to use Laravel Blade, Next.js, and Tailwind CSS well.
-                                I'm skilled in creating well-designed components and integrations API.
+                                I&apos;m skilled in creating well-designed components and integrations API.
                                 My area of expertise is developing platforms that meet various business requirements.
-                                I can't wait to apply my abilities to benefit your business and produce excellent outcomes.
+                                I can&apos;t wait to apply my abilities to benefit your business and produce excellent outcomes.
                             </p>
                         </div>
                     </div>
