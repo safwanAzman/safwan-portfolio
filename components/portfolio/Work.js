@@ -16,13 +16,13 @@ const Work = () => {
     return (
         <>
             <PortfolioCard
-                href="https://cscabs.net.my/kasihgold/login"
+                href="https://digital.kasihapgold.com/login"
                 src={kasihgold}
                 title="Kasih Gold"
                 subTitle="Tall Stack"
             />
             <PortfolioCard
-                href="https://cscabs.net.my/covid/"
+                href="#"
                 src={csccovid}
                 title="Covid Report"
                 subTitle="Laravel & Tailwindcss"
