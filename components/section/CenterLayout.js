@@ -7,7 +7,7 @@ import { MainAudio } from '../MainAudio';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLaptopCode ,faClock,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
-import Spline from '@splinetool/react-spline';
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 const CenterLayout = () => {
     const audioRef = useRef();
@@ -15,14 +15,20 @@ const CenterLayout = () => {
     const [yearWork, setYearWork] = useState(null);
     const [hourWork , setHourWork] = useState(null);
     const [isTouchDevice, setIsTouchDevice] = useState(false);
-    
-    useEffect(() => {
-        setYearWork(new Date().getFullYear() - 2020);
-        setHourWork(yearWork * 8765);
-        if (typeof window !== 'undefined') {
-            setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints);
-        }
-    }, [yearWork, hourWork]);
+
+    const spline = useRef();
+
+    function onLoad(splineApp) {
+        spline.current = splineApp;
+    }
+
+    // useEffect(() => {
+    //     setYearWork(new Date().getFullYear() - 2020);
+    //     setHourWork(yearWork * 8765);
+    //     if (typeof window !== 'undefined') {
+    //         setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints);
+    //     }
+    // }, [yearWork, hourWork]);
 
 
     const handlePlay = () => {
@@ -67,13 +73,17 @@ const CenterLayout = () => {
                     </div>
                 </Draggable>
             </div>
-
-            <div className="h-80 relative hidden sm:block">
-                <Spline scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
+            <div className="h-80 relative">
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Spline 
+                        scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" 
+                        onLoad={onLoad}
+                    />
+                </Suspense>
             </div>
 
             {/* About */}
-            <div className="animate__animated animate__fadeInUpBig mt-4 sm:-mt-9">
+            <div className="animate__animated animate__fadeInUpBig -mt-9">
                 <Draggable disabled={isTouchDevice}>
                     <div className="p-4 text-white bg-center bg-cover card-bg-color shdaow-xl cursor-grab">
                         <div className="px-4">
@@ -106,7 +116,7 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
-            <div className="block sm:hidden">
+            {/* <div className="block sm:hidden">
                 <div className="grid grid-cols-2 gap-6 mt-6 ">
                     <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
                         <Draggable disabled={isTouchDevice}>
@@ -139,7 +149,7 @@ const CenterLayout = () => {
                         </Draggable>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
         );
     };
