@@ -7,20 +7,13 @@ import { MainAudio } from '../MainAudio';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLaptopCode ,faClock,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
+import Spline from '@splinetool/react-spline';
 
 const CenterLayout = () => {
     const audioRef = useRef();
     const [isPlaying, setIsPlaying] = useState(false);
-    const [yearWork, setYearWork] = useState(null);
-    const [hourWork , setHourWork] = useState(null);
+    const [loading, setLoading] = useState(true)
     const [isTouchDevice, setIsTouchDevice] = useState(false);
-
-    const spline = useRef();
-
-    function onLoad(splineApp) {
-        spline.current = splineApp;
-    }
 
     // useEffect(() => {
     //     setYearWork(new Date().getFullYear() - 2020);
@@ -74,10 +67,11 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
             <div className="h-80 relative">
+                {loading && <div> Loading</div> }
                 <Suspense fallback={<div>Loading...</div>}>
                     <Spline 
                         scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" 
-                        onLoad={onLoad}
+                        onLoad={()=>setLoading(false)} 
                     />
                 </Suspense>
             </div>
