@@ -79,9 +79,10 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
             {!isMobile &&
+            
                 <div className="h-[26rem] relative ">
                     {loading && <div className=' flex justify-center items-center h-64 text-white'>Loading...</div> }
-                    <Spline onLoad={()=>setLoading(false)}  scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
+                    <Spline className="cursor-pointer" onLoad={()=>setLoading(false)}  scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
                 </div>
             }
             {/* About */}
