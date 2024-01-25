@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Me from '../../assets/me3.jpg';
 import { MainAudio } from '../MainAudio';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faLaptopCode ,faClock, faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
 import Spline from '@splinetool/react-spline';
 
@@ -11,13 +11,29 @@ const CenterLayout = () => {
     const audioRef = useRef();
     const [isPlaying, setIsPlaying] = useState(false);
     const [loading, setLoading] = useState(true)
+    const [yearWork, setYearWork] = useState(null);
+    const [hourWork , setHourWork] = useState(null);
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        setYearWork(new Date().getFullYear() - 2020);
+        setHourWork(yearWork * 8765);
         if (typeof window !== 'undefined') {
             setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints);
         }
-    }, []);
+            const updateScreenWidth = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        updateScreenWidth();
+        
+        window.addEventListener('resize', updateScreenWidth);
+    
+        return () => {
+        window.removeEventListener('resize', updateScreenWidth);
+        };
+    }, [yearWork, hourWork]);
+
 
 
     const handlePlay = () => {
@@ -62,16 +78,14 @@ const CenterLayout = () => {
                     </div>
                 </Draggable>
             </div>
-            <div className="h-80 relative">
-                {loading && <div className=' flex justify-center items-center h-64 text-white'>Loading...</div> }
-                <Spline 
-                    scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" 
-                    onLoad={()=>setLoading(false)} 
-                />
-            </div>
-
+            {!isMobile &&
+                <div className="h-80 relative ">
+                    {loading && <div className=' flex justify-center items-center h-64 text-white'>Loading...</div> }
+                    <Spline onLoad={()=>setLoading(false)}  scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
+                </div>
+            }
             {/* About */}
-            <div className="animate__animated animate__fadeInUpBig -mt-9">
+            <div className="animate__animated animate__fadeInUpBig mt-4 sm:-mt-9">
                 <Draggable disabled={isTouchDevice}>
                     <div className="p-4 text-white bg-center bg-cover card-bg-color shdaow-xl cursor-grab">
                         <div className="px-4">
@@ -104,7 +118,7 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
 
-            {/* <div className="block sm:hidden">
+            <div className="block sm:hidden">
                 <div className="grid grid-cols-2 gap-6 mt-6 ">
                     <div className="animate__animated animate__fadeInBottomLeft animate__delay-2s">
                         <Draggable disabled={isTouchDevice}>
@@ -137,7 +151,7 @@ const CenterLayout = () => {
                         </Draggable>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
         );
     };
