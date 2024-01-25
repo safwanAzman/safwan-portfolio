@@ -1,11 +1,9 @@
-import React, { useEffect, useRef,useState,Suspense }  from 'react';
+import React, { useEffect, useRef,useState}  from 'react';
 import Image from 'next/image';
 import Me from '../../assets/me3.jpg';
-
 import { MainAudio } from '../MainAudio';
-
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faLaptopCode ,faClock,faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import Draggable from 'react-draggable';
 import Spline from '@splinetool/react-spline';
 
@@ -15,13 +13,11 @@ const CenterLayout = () => {
     const [loading, setLoading] = useState(true)
     const [isTouchDevice, setIsTouchDevice] = useState(false);
 
-    // useEffect(() => {
-    //     setYearWork(new Date().getFullYear() - 2020);
-    //     setHourWork(yearWork * 8765);
-    //     if (typeof window !== 'undefined') {
-    //         setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints);
-    //     }
-    // }, [yearWork, hourWork]);
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints);
+        }
+    }, []);
 
 
     const handlePlay = () => {
@@ -67,13 +63,11 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
             <div className="h-80 relative">
-                {loading && <div> Loading</div> }
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Spline 
-                        scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" 
-                        onLoad={()=>setLoading(false)} 
-                    />
-                </Suspense>
+                {loading && <div className=' flex justify-center items-center h-64 text-white'>Loading...</div> }
+                <Spline 
+                    scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" 
+                    onLoad={()=>setLoading(false)} 
+                />
             </div>
 
             {/* About */}
