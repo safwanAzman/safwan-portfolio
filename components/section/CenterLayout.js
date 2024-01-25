@@ -79,7 +79,7 @@ const CenterLayout = () => {
                 </Draggable>
             </div>
             {!isMobile &&
-                <div className="h-80 relative ">
+                <div className="h-[26rem] relative ">
                     {loading && <div className=' flex justify-center items-center h-64 text-white'>Loading...</div> }
                     <Spline onLoad={()=>setLoading(false)}  scene="https://prod.spline.design/jBtfDF8ZAay0J7vw/scene.splinecode" />
                 </div>
@@ -99,19 +99,12 @@ const CenterLayout = () => {
                                     handleAudioEnd={handlePause}
                                 />
                             </div>
-                            <p className="h-full pt-2 text-sm leading-6 lg:h-64">
-                                I am a highly skilled Frontend Developer with a passion for creating visually stunning and intuitive
-                                user interfaces.
-                                I have a strong background in HTML, CSS, and JavaScript, as well as experience with popular frontend
-                                frameworks such
-                                as React and laravel blade. I have a keen eye for design and am well-versed in creating responsive
-                                layouts and
-                                cross-browser compatible web pages. I am skilled in utilizing design software such as Figma to
-                                create mockups and wireframes.
-                                I am also proficient in using CSS preprocessors and CSS frameworks such as Tailwindcss. I am a quick learner and
-                                am always eager to stay up-to-date with the latest frontend
-                                technologies and best practices. I am a team player and am able to work well under pressure,
-                                I am confident that I can bring value to any organization.
+                            <p className="h-full pt-2 text-sm leading-6">
+                                My name is Safwan, and I have {yearWork} years of experience as a front-end developer.
+                                I know how to use Laravel Blade, Next.js, and Tailwind CSS well.
+                                I'm skilled in creating well-designed components and integrations API.
+                                My area of expertise is developing platforms that meet various business requirements.
+                                I can't wait to apply my abilities to benefit your business and produce excellent outcomes.
                             </p>
                         </div>
                     </div>

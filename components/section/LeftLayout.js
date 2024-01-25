@@ -53,7 +53,7 @@ const LeftLayout = () => {
         const intervalId = setInterval(updateTimeAndDate, 1000);
 
         if (audioRef.current) {
-            audioRef.current.volume = 0.3;
+            audioRef.current.volume = 0.5;
         }
         return () => {
             clearInterval(intervalId);
