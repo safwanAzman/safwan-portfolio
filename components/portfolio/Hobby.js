@@ -13,13 +13,13 @@ const Hobby = () => {
     return (
         <>
             <PortfolioCard
-                href="https://jomskate.vercel.app/"
+                href="https://www.jomskate.xyz/"
                 src={jomskate}
                 title="Jom Skate"
                 subTitle="Next Js & Tailwindcss"
             />
             <PortfolioCard
-                href="https://boycott-israel-safwanazman.vercel.app/en"
+                href="https://www.boikotisrael.com/en"
                 src={boikotisrael}
                 title="Boikot Israel"
                 subTitle="Next Js & Tailwindcss"
