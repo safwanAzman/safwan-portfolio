@@ -7,6 +7,7 @@ import mycomponent from '../../assets/work/mycomponent.png';
 import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
 import boikotisrael from '../../assets/work/boikotIsrael.png';
+import ryukgenerate from '../../assets/work/ryukgenerate.png';
 
 
 const Hobby = () => {
@@ -22,6 +23,12 @@ const Hobby = () => {
                 href="https://www.boikotisrael.com/en"
                 src={boikotisrael}
                 title="Boikot Israel"
+                subTitle="Next Js & Tailwindcss"
+            />
+            <PortfolioCard
+                href="https://ryuk-generate.vercel.app/"
+                src={ryukgenerate}
+                title="Ryuk Generate"
                 subTitle="Next Js & Tailwindcss"
             />
             <PortfolioCard
