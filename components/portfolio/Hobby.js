@@ -8,6 +8,7 @@ import todo from '../../assets/work/todo.png';
 import jomskate from '../../assets/work/jomskate.png';
 import boikotisrael from '../../assets/work/boikotIsrael.png';
 import ryukgenerate from '../../assets/work/ryukgenerate.png';
+import offrage from '../../assets/work/offrage.png';
 
 
 const Hobby = () => {
@@ -32,6 +33,18 @@ const Hobby = () => {
                 subTitle="Next Js & Tailwindcss"
             />
             <PortfolioCard
+              href="https://www.offrage.store/"
+              src={offrage}
+              title="Offrage Store"
+              subTitle="Nextjs & Tailwindcss"
+            />
+            <PortfolioCard
+              href="https://digital-card-pearl.vercel.app/"
+              src={digitalcard}
+              title="Digital Card"
+              subTitle="Nextjs & Tailwindcss"
+            />
+            <PortfolioCard
                 href="https://www.frontendmentor.io/profile/safwanAzman"
                 src={frontendMentor}
                 title="My Challenge Solutions"
@@ -49,12 +62,7 @@ const Hobby = () => {
                 title="Todo List"
                 subTitle="React & Tailwindcss"
             />
-            <PortfolioCard
-                href="https://digital-card-pearl.vercel.app/"
-                src={digitalcard}
-                title="Digital Card"
-                subTitle="Nextjs & Tailwindcss"
-            />
+            
         </>
     )
 }
